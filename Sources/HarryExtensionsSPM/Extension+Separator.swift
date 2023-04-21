@@ -9,7 +9,7 @@
 import UIKit
 
 extension UICollectionReusableView {
-    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool, color: UIColor? = UIColor.separator) {
+    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool, color: UIColor? = UIColor.lightGray) {
         let view = UIView()
         view.backgroundColor = color
         superview.addSubview(view)
@@ -21,7 +21,7 @@ extension UICollectionReusableView {
         }
     }
     
-    public func getSeparatorView(color: UIColor? = UIColor.separator) -> UIView {
+    public func getSeparatorView(color: UIColor? = UIColor.lightGray) -> UIView {
         let view = UIView()
         view.backgroundColor = color
         view.constrainHeight(constant: 0.5)
@@ -30,7 +30,7 @@ extension UICollectionReusableView {
 }
 
 extension UIViewController {
-    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool, color: UIColor? = UIColor.separator) {
+    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool, color: UIColor? = UIColor.lightGray) {
         let view = UIView()
         view.backgroundColor = color
         superview.addSubview(view)
